@@ -12,7 +12,7 @@
   <link href="portfolio.png" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,70[...]
 
   <!-- Vendor CSS Files -->
   <link href="vendor/aos/aos.css" rel="stylesheet">
@@ -157,10 +157,17 @@
       padding-right: 15px;
     }
 
-    /* Background images - don't use fixed attachment on mobile */
-    @media (max-width: 768px) {
+    /* Base background image styles */
+    .test {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Parallax effect for desktop devices only */
+    @media (min-width: 769px) {
       .test {
-        background-attachment: scroll !important;
+        background-attachment: fixed;
       }
     }
 
@@ -290,7 +297,7 @@
       </div>
     </section><!-- End About Us Section -->
 
-    <div class="img-fluid d-flex flex-column justify-content-center align-items-center test" style="background-image:url('p1.jpg'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; min-height: 200px; padding: 40px 20px;">
+    <div class="img-fluid d-flex flex-column justify-content-center align-items-center test" style="background-image:url('p1.jpg'); background-size: cover; background-rep[...]
       <h1 class="text-white">"Building ideas into reality, one project at a time"</h1>
     </div>
 
@@ -368,7 +375,7 @@
       </div>
     </section><!-- End Projects Section -->
 
-    <div class="img-fluid d-flex flex-column justify-content-center align-items-center test" style="background-image:url('p2.jpg'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; min-height: 200px; padding: 40px 20px;">
+    <div class="img-fluid d-flex flex-column justify-content-center align-items-center test" style="background-image:url('p2.jpg'); background-size: cover; background-rep[...]
       <h1 class="text-white">"Code, creativity, and curiosity drive everything I create"</h1>
     </div>
 
@@ -444,7 +451,7 @@
       </div>
     </section>
 
-    <div class="img-fluid d-flex flex-column justify-content-center align-items-center test" style="background-image:url('bg2.jpg'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; min-height: 200px; padding: 40px 20px;">
+    <div class="img-fluid d-flex flex-column justify-content-center align-items-center test" style="background-image:url('bg2.jpg'); background-size: cover; background-re[...]
       <h1 class="text-white">"Writing stories in books and logic in code."</h1>
     </div>
 
@@ -529,7 +536,7 @@
       </div>
     </section>
 
-    <div class="img-fluid d-flex flex-column justify-content-center align-items-center test" style="background-image:url('bg.jpg'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat; min-height: 200px; padding: 40px 20px;">
+    <div class="img-fluid d-flex flex-column justify-content-center align-items-center test" style="background-image:url('bg.jpg'); background-size: cover; background-rep[...]
       <h1 class="text-white">"A student today, a creator for tomorrow."</h1>
     </div>
 
