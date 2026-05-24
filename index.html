@@ -12,7 +12,7 @@
   <link href="portfolio.png" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,70[...]
 
   <!-- Vendor CSS Files -->
   <link href="vendor/aos/aos.css" rel="stylesheet">
@@ -28,6 +28,77 @@
 
   <!-- Mobile Optimization Styles -->
   <style>
+    /* Header Navigation Styles */
+    #header {
+      background-color: #0B0F19;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #3B82F6 !important;
+      font-size: 1.5rem;
+    }
+
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .nav-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 0;
+    }
+
+    .nav-link {
+      color: rgba(255, 255, 255, 0.8) !important;
+      padding: 0.75rem 1.25rem !important;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #3B82F6 !important;
+    }
+
+    /* Mobile responsive navbar */
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        background-color: rgba(11, 15, 25, 0.98);
+        padding: 1rem 0;
+        margin-top: 1rem;
+        border-radius: 8px;
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .nav-link {
+        padding: 0.75rem 1.5rem !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        border-left: 3px solid transparent;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        border-left-color: #3B82F6;
+        padding-left: calc(1.5rem - 3px) !important;
+      }
+    }
+
     /* Mobile-first responsive improvements */
     @media (max-width: 768px) {
       /* Hero Section */
@@ -149,12 +220,6 @@
       display: block;
     }
 
-    /* Fix navigation for mobile */
-    #navbar ul {
-      padding: 0;
-      margin: 0;
-    }
-
     /* Improve touch targets for mobile */
     a, button {
       min-height: 44px;
@@ -216,22 +281,46 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex justify-content-between align-items-center">
+    <nav class="navbar navbar-expand-lg navbar-dark w-100">
+      <div class="container-fluid d-flex justify-content-between align-items-center px-4">
+        
+        <!-- Logo/Brand -->
+        <a class="navbar-brand" href="#hero" data-aos="fade-down" data-aos-delay="50">
+          Harnoor Kaur
+        </a>
 
-      <!-- Logo -->
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <nav id="navbar" class="navbar" data-aos="fade-down" data-aos-delay="50">
-        <ul class="nav-menu">
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#project">Projects</a></li>
-          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
-          <li><a class="nav-link scrollto" href="#faq">Insights</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav" data-aos="fade-down" data-aos-delay="50">
+          <ul class="nav-menu ms-auto">
+            <li class="nav-item">
+              <a class="nav-link scrollto active" href="#hero" data-bs-toggle="collapse" data-bs-target="#navbarNav">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#about" data-bs-toggle="collapse" data-bs-target="#navbarNav">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#project" data-bs-toggle="collapse" data-bs-target="#navbarNav">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#skills" data-bs-toggle="collapse" data-bs-target="#navbarNav">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#faq" data-bs-toggle="collapse" data-bs-target="#navbarNav">Insights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#contact" data-bs-toggle="collapse" data-bs-target="#navbarNav">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-    </div>
+      </div>
+    </nav>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
