@@ -266,6 +266,10 @@
       font-weight: bold;
       letter-spacing: 1px;
     }
+    #header {
+  background: #0B0F19;
+  z-index: 1000;
+}
   </style>
 
   <!-- =======================================================
@@ -281,46 +285,26 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark w-100">
-      <div class="container-fluid d-flex justify-content-between align-items-center px-4">
-        
-        <!-- Logo/Brand -->
-        <a class="navbar-brand" href="#hero" data-aos="fade-down" data-aos-delay="50">
-          Harnoor Kaur
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+  
+  <!-- Toggle button (IMPORTANT for mobile) -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <!-- Mobile Toggle Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Menu -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="#faq">Insights</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
-        <!-- Navigation Menu -->
-        <div class="collapse navbar-collapse" id="navbarNav" data-aos="fade-down" data-aos-delay="50">
-          <ul class="nav-menu ms-auto">
-            <li class="nav-item">
-              <a class="nav-link scrollto active" href="#hero" data-bs-toggle="collapse" data-bs-target="#navbarNav">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#about" data-bs-toggle="collapse" data-bs-target="#navbarNav">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#project" data-bs-toggle="collapse" data-bs-target="#navbarNav">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#skills" data-bs-toggle="collapse" data-bs-target="#navbarNav">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#faq" data-bs-toggle="collapse" data-bs-target="#navbarNav">Insights</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#contact" data-bs-toggle="collapse" data-bs-target="#navbarNav">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
+</nav>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
