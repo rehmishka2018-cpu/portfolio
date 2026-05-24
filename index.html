@@ -14,7 +14,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,70[...]
 
-
+  <!-- Vendor CSS Files -->
   <link href="vendor/aos/aos.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -95,6 +95,11 @@
         padding: 20px !important;
         text-align: center;
       }
+
+      /* Parallax sections on mobile */
+      .test {
+        min-height: 300px !important;
+      }
     }
 
     @media (max-width: 576px) {
@@ -130,6 +135,11 @@
       .display-3 {
         font-size: 2rem !important;
       }
+
+      /* Extra small parallax height */
+      .test {
+        min-height: 250px !important;
+      }
     }
 
     /* Ensure images are responsive */
@@ -162,12 +172,15 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      min-height: 400px;
+      width: 100%;
     }
 
     /* Parallax effect for desktop devices only */
     @media (min-width: 769px) {
       .test {
         background-attachment: fixed;
+        min-height: 500px;
       }
     }
 
